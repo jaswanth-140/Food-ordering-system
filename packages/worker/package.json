@@ -1,0 +1,10 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modal GPU worker functions for video processing",
+  "scripts": {
+    "deploy": "modal deploy video_processor.py",
+    "test": "modal run video_processor.py"
+  }
+}

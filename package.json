@@ -1,0 +1,42 @@
+{
+  "name": "viralvibe-saas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ViralVibe - Viral Video Repurposing SaaS Platform",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel run dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev",
+    "build": "pnpm --recursive run build",
+    "build:web": "pnpm --filter web build",
+    "test": "pnpm --recursive run test",
+    "lint": "pnpm --recursive run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "type-check": "pnpm --recursive run type-check",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "db:migrate": "cd packages/db && pnpm run migrate"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "video-editing",
+    "saas",
+    "ai",
+    "viral-content",
+    "monorepo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/viralvibe-saas.git"
+  },
+  "author": "ViralVibe Team",
+  "license": "MIT"
+}
